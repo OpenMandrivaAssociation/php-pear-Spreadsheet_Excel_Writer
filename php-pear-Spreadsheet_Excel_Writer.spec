@@ -5,8 +5,8 @@
 
 Summary:	%{_pearname} - package for generating Excel spreadsheets
 Name:		php-pear-%{_pearname}
-Version:	0.8
-Release:	%mkrel 8
+Version:	0.9.1
+Release:	%mkrel 1
 License:	PHP License
 Group:		Development/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tar.bz2
