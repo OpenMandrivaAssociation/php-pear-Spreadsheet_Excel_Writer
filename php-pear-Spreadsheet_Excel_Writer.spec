@@ -17,6 +17,7 @@ Requires:	php-pear
 BuildArch:	noarch
 BuildRequires:	dos2unix
 BuildRequires:	recode
+BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 Spreadsheet_Excel_Writer was born as a porting of the
