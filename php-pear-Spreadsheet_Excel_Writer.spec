@@ -6,17 +6,17 @@
 Summary:	%{_pearname} - package for generating Excel spreadsheets
 Name:		php-pear-%{_pearname}
 Version:	0.9.1
-Release:	%mkrel 4
+Release:	%mkrel 5
 License:	PHP License
 Group:		Development/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tar.bz2
 URL:		http://pear.php.net/package/Spreadsheet_Excel_Writer/
+Patch0:		php-pear-Spreadsheet_Excel_Writer-0.9.1-undeclared_entity_warning_fix.diff
 Requires(post): php-pear
 Requires(preun): php-pear
 Requires:	php-pear
 BuildArch:	noarch
 BuildRequires:	dos2unix
-BuildRequires:	recode
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
@@ -44,9 +44,7 @@ done
 # strip away annoying ^M
 find -type f | grep -v ".gif" | grep -v ".png" | grep -v ".jpg" | xargs dos2unix -U
 
-# fix bad xml
-recode -d latin-1..html < package.xml > package.xml~
-mv package.xml~ package.xml
+%patch0 -p0
 
 %install
 rm -rf %{buildroot}
