@@ -3,13 +3,13 @@
 %define		upstream_name	%{_class}_%{_subclass}_Writer
 
 Name:		php-pear-%{upstream_name}
-Version:	0.9.1
-Release:	%mkrel 8
+Version:	0.9.2
+Release:	%mkrel 1
 Summary:	Package for generating Excel spreadsheets
 License:	PHP License
 Group:		Development/PHP
 URL:		http://pear.php.net/package/Spreadsheet_Excel_Writer/
-Source0:	http://download.pear.php.net/package/%{upstream_name}-%{version}.tar.bz2
+Source0:	http://download.pear.php.net/package/%{upstream_name}-%{version}.tgz
 Requires(post): php-pear
 Requires(preun): php-pear
 Requires:	php-pear
