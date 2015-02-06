@@ -4,7 +4,7 @@
 
 Name:		php-pear-%{upstream_name}
 Version:	0.9.3
-Release:	1
+Release:	2
 Summary:	Package for generating Excel spreadsheets
 License:	PHP License
 Group:		Development/PHP
