@@ -8,7 +8,7 @@ Release:	2
 Summary:	Package for generating Excel spreadsheets
 License:	PHP License
 Group:		Development/PHP
-URL:		http://pear.php.net/package/Spreadsheet_Excel_Writer/
+URL:		https://pear.php.net/package/Spreadsheet_Excel_Writer/
 Source0:	http://download.pear.php.net/package/Spreadsheet_Excel_Writer-%{version}.tgz
 Requires(post): php-pear
 Requires(preun): php-pear
